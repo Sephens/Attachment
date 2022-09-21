@@ -1,5 +1,4 @@
 import React, {useState,useEffect} from 'react';
-import logo from './logo.svg';
 import './App.css';
 import ExpenseForm from "./components/ExpenseForm"
 // import ExpenseItem from "./components/ExpenseItem"
@@ -75,7 +74,7 @@ function App() {
     } else {
       handleAlert({
         type: "danger",
-        text: `charge can't be empty value and amount value has to be bigger than zero`
+        text: `Charge amount can't be empty and has to be bigger than zero`
       });
     }
   };

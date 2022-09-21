@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 :root {
-  --primaryColor: #c5f125;
+  --primaryColor: #f1aa25;
   --mainWhite: #fff;
   --mainBlack: #222;
   --mainGrey: #9e9e9e;
+  --background-col:#5a8810;
   --mainRed: #b86363;
   --mainGreen: #4caf50;
 }
@@ -12,7 +13,7 @@
   box-sizing: border-box;
 }
 body {
-  background: var(--mainGrey);
+  background: var(--background-col);
   color: var(--mainBlack);
   font-family: "Roboto", sans-serif;
 }
@@ -21,7 +22,7 @@ h1 {
   text-transform: capitalize;
   margin: 2rem 0;
   color: var(--mainWhite);
-  letter-spacing: 5px;
+  letter-spacing: 2px;
 }
 .App {
   margin: 0 auto;
@@ -29,7 +30,7 @@ h1 {
   width: 90%;
   background: var(--mainWhite);
   padding-bottom: 2rem;
-  border-radius: 2px;
+  border-radius: 22px;
 }
 .form-center {
   display: flex;
@@ -41,7 +42,7 @@ h1 {
 }
 label {
   display: block;
-  color: var(--mainGrey);
+  color: var(--background-col);
   font-size: 1rem;
   text-transform: capitalize;
 }
@@ -49,7 +50,7 @@ label {
 .form-control {
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid var(--mainGrey);
+  border-bottom: 1px solid var(--background-col);
   border-radius: 0;
   outline: none;
   height: 3rem;
@@ -67,7 +68,7 @@ label {
   font-size: 14px;
   outline: 0;
   border: none;
-  border-radius: 2px;
+  border-radius: 25px;
   display: block;
   height: 36px;
   line-height: 36px;
@@ -119,8 +120,7 @@ label {
 .amount {
   font-weight: 300;
   font-size: 1rem;
-  color: var(--mainWhite);
-  background-color: var(--primaryColor);
+  color: var(--primaryColor);
   border-radius: 2px;
   padding: 1px 3px;
 }
@@ -141,7 +141,6 @@ label {
 .total {
   font-weight: 300;
   color: var(--mainWhite);
-  background-color: var(--primaryColor);
   border-radius: 2px;
   padding: 2px 5px;
 }

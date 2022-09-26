@@ -1,14 +1,18 @@
-import React, {useState,useEffect} from 'react';
-import './App.css';
-import ExpenseForm from "./components/ExpenseForm"
-// import ExpenseItem from "./components/ExpenseItem"
-import ExpenseList from "./components/ExpenseList"
-import Alert from "./components/Alert"
+import React, { useState, useEffect } from "react";
+import "./App.css";
+import ExpenseForm from "./components/ExpenseForm";
+import ExpenseList from "./components/ExpenseList";
+import Alert from "./components/Alert";
 import uuid from "uuid/v4";
-
-const { v4: uuidv4 } = require('uuid');
-uuidv4(); // ⇨ '1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4bed'
-
+// const initialExpenses = [
+//   { id: uuid(), charge: "rent", amount: 1600 },
+//   { id: uuid(), charge: "car payment", amount: 400 },
+//   {
+//     id: uuid(),
+//     charge: "credit card bill ",
+//     amount: 1200
+//   }
+// ];
 const initialExpenses = localStorage.getItem("expenses")
   ? JSON.parse(localStorage.getItem("expenses"))
   : [];
@@ -28,11 +32,6 @@ function App() {
   useEffect(() => {
     console.log("called");
 
-    //Use the JavaScript function JSON.stringify() to convert it into a string.
-    //The setItem() method sets the value of the specified Storage Object item.
-
-    // The setItem() method belongs to the Storage Object, which can be either a localStorage object or a sessionStorage object.
-
     localStorage.setItem("expenses", JSON.stringify(expenses));
   }, [expenses]);
   // *********** functionality **************
@@ -41,7 +40,6 @@ function App() {
     setCharge(e.target.value);
   };
   // add amount
-  //The target event property returns the element that triggered the event
   const handleAmount = e => {
     let amount = e.target.value;
     if (amount === "") {
@@ -80,7 +78,7 @@ function App() {
     } else {
       handleAlert({
         type: "danger",
-        text: `Charge amount can't be empty and has to be bigger than zero`
+        text: `charge can't be empty value and amount value has to be bigger than zero`
       });
     }
   };
@@ -107,7 +105,7 @@ function App() {
   return (
     <>
       {alert.show && <Alert type={alert.type} text={alert.text} />}
-      <h1>Budget calculator</h1>
+      <h1>budget calculator</h1>
       <main className="App">
         <ExpenseForm
           handleSubmit={handleSubmit}

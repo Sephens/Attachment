@@ -1,0 +1,28 @@
+html, body {
+    padding:0;
+    margin: 0;
+    background-color: rgb(145, 196, 116);
+    background-image: url("./images/image2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    font-family:"Arial", sans-serif;
+    font-size:10px;
+    display: block;
+    scrollbar-color:#F86F0C rgb(200,200,200);
+    scrollbar-width:thin;
+}
+
+.uniform {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    overflow: visible;
+    transition: transform ease 1s;
+    transform:scale(var(--s,1));
+}

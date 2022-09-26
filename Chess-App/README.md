@@ -164,6 +164,6 @@ HTML elements are positioned static by default.
 ![Video](/Chess-App/images/image4.jpg)
 
 ## Some Links
-![Images] (/Chess-App/images)
+![Images](https://github.com/Sephens/Attachment/tree/master/Chess-App/images)
 
 

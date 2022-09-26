@@ -161,8 +161,6 @@ HTML elements are positioned static by default.
 >out
 ## Some Video
 
-![Alt](path to img)
-
-![Image](/component-library/images/website.svg)
+![Video](/Chess-App/images/test.mp4)
 
 

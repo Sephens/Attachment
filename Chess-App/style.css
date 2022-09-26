@@ -26,3 +26,8 @@ html, body {
     transition: transform ease 1s;
     transform:scale(var(--s,1));
 }
+
+.object3d {
+    top: 0;
+    
+}

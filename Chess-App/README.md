@@ -7,138 +7,209 @@ This property allows you to rotate, scale, move, skew, etc., elements
 * The ```flex-direction``` property defines in which direction the container wants to stack the flex items.
 * The ```flex-wrap``` property specifies whether the flex items should wrap or not.
 * The ```flex-flow``` property is a shorthand property for setting both the ```flex-direction``` and ```flex-wrap```properties.
-* .flex-container {
-  display: flex;
-  flex-flow: row wrap;
-}
+> .flex-container {
+>>
+>> display: flex;
+>>
+>> flex-flow: row wrap;
+>>
+>}
+>
+
 
 ## The justify-content Property
->> The ```justify-content``` property is used to align the flex items:
+* The ```justify-content``` property is used to align the flex items:
 * The ```center``` value aligns the flex items at the center of the container:
-.flex-container {
-  display: flex;
-  justify-content: center;
-}
+> .flex-container {
+>>
+>>  display: flex;
+>>
+>>  justify-content: center;
+>>
+>}
+>
 
 * The ```flex-start``` value aligns the flex items at the beginning of the container (this is default):
-.flex-container {
-  display: flex;
-  justify-content: flex-start;
+> .flex-container {
+>>
+>> display: flex;
+>>
+>>  justify-content: flex-start;
+>>
 }
 
 * The ```flex-end``` value aligns the flex items at the end of the container:
-.flex-container {
-  display: flex;
-  justify-content: flex-end;
-}
+>   .flex-container {
+>>
+>>  display: flex;
+>>
+>>  justify-content: flex-end;
+>>  
+>   }
 
 * The ```space-around``` value displays the flex items with space before, between, and after the lines:
-.flex-container {
-  display: flex;
-  justify-content: space-around;
-}
+> .flex-container {
+>
+>>  display: flex;
+>>
+>>  justify-content: space-around;
+>
+> }
 * The ```space-between``` value displays the flex items with space between the lines:
-.flex-container {
-  display: flex;
-  justify-content: space-between;
-}
+> .flex-container {
+>
+>> display: flex;
+>>
+>>justify-content: space-between;
+>
+> }
 
 ## The align-items Property
 * The ```align-items``` property is used to align the flex items.
 * The ```center``` value aligns the flex items in the middle of the container:
 
-.flex-container {
-  display: flex;
-  height: 200px;
-  align-items: center;
-}
+> .flex-container {
+>
+>>  display: flex;
+>>
+>>  height: 200px;
+>>
+>>  align-items: center;
+>
+> }
 
 * The ```flex-start``` value aligns the flex items at the top of the container:
 
-.flex-container {
-  display: flex;
-  height: 200px;
-  align-items: flex-start;
-}
+> .flex-container {
+>
+>>  display: flex;
+>>
+>>  height: 200px;
+>>
+>>  align-items: flex-start;
+>
+> }
 
 * The ```flex-end``` value aligns the flex items at the bottom of the container:
 
-.flex-container {
-  display: flex;
-  height: 200px;
-  align-items: flex-end;
-}
+> .flex-container {
+>
+>>  display: flex;
+>>
+>>  height: 200px;
+>>
+>>  align-items: flex-end;
+>
+> }
 
 * The ```stretch value``` stretches the flex items to fill the container (this is default):
 
-.flex-container {
-  display: flex;
-  height: 200px;
-  align-items: stretch;
-}
+> .flex-container {
+>
+>>  display: flex;
+>>
+>>  height: 200px;
+>>
+>>  align-items: stretch;
+>
+> }
 
 * The ```baseline``` value aligns the flex items such as their baselines aligns:
 
-.flex-container {
-  display: flex;
-  height: 200px;
-  align-items: baseline;
-}
+> .flex-container {
+>
+>>  display: flex;
+>>
+>>  height: 200px;
+>>
+>>  align-items: baseline;
+>
+> }
 
 ## The align-content Property
 * The ```align-content``` property is used to align the flex lines.
 * The ```space-between``` value displays the flex lines with equal space between them:
-.flex-container {
-  display: flex;
-  height: 600px;
-  flex-wrap: wrap;
-  align-content: space-between;
-}
+> .flex-container {
+>
+>>  display: flex;
+>>
+>>  height: 600px;
+>>
+>>  flex-wrap: wrap;
+>>
+>>  align-content: space-between;
+>
+> }
 
 * The ```space-around``` value displays the flex lines with space before, between, and after them:
 
-.flex-container {
-  display: flex;
-  height: 600px;
-  flex-wrap: wrap;
-  align-content: space-around;
-}
+> .flex-container {
+>
+>>  display: flex;
+>>
+>>  height: 600px;
+>>
+>>  flex-wrap: wrap;
+>>
+>>  align-content: space-around;
+>
+> }
 
 * The ```stretch``` value stretches the flex lines to take up the remaining space (this is default):
 
-.flex-container {
-  display: flex;
-  height: 600px;
-  flex-wrap: wrap;
-  align-content: stretch;
-}
+> .flex-container {
+>
+>>  display: flex;
+>>
+>>  height: 600px;
+>>
+>>  flex-wrap: wrap;
+>>
+>>  align-content: stretch;
+>
+> }
 
 * The ```center``` value displays display the flex lines in the middle of the container:
 
-.flex-container {
-  display: flex;
-  height: 600px;
-  flex-wrap: wrap;
-  align-content: center;
-}
+> .flex-container {
+>
+>>  display: flex;
+>>
+>>  height: 600px;
+>>
+>>  flex-wrap: wrap;
+>>
+>>  align-content: center;
+>
+> }
 
 * The ```flex-start``` value displays the flex lines at the start of the container:
 
-.flex-container {
-  display: flex;
-  height: 600px;
-  flex-wrap: wrap;
-  align-content: flex-start;
-}
+> .flex-container {
+>
+>>  display: flex;
+>>
+>>  height: 600px;
+>>
+>>  flex-wrap: wrap;
+>>
+>>  align-content: flex-start;
+>
+>}
 
 * The ```flex-end``` value displays the flex lines at the end of the container: 
 
-.flex-container {
-  display: flex;
-  height: 600px;
-  flex-wrap: wrap;
-  align-content: flex-end;
-}
+> .flex-container {
+>
+>>  display: flex;
+>>
+>>  height: 600px;
+>>
+>>  flex-wrap: wrap;
+>>
+>>  align-content: flex-end;
+>
+>}
 
 ## CSS top Property
 * The top property affects the vertical position of a positioned element. This property has no effect on non-positioned elements.
@@ -151,14 +222,30 @@ If ```position: static;``` - the top property has no effect.
 
 ## CSS Layout - The position Property
 The position property specifies the type of positioning method used for an element (static, relative, fixed, absolute or stick
-```Position: static;```
+`Position: static;`
 HTML elements are positioned static by default.
 An element with position: static; is not positioned in any special way; it is always positioned according to the normal flow of the page:
 
 > div.static {
+>
 >>  position: static;
->>  border: 3px solid #73AD21;
 >>
->}
+>>  border: 3px solid #73AD21;
+>
+> }
+
+An element with `position: relative;` is positioned relative to its normal position.
+
+Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element.
+
+> div.relative {
+>
+>>  position: relative;
+>>
+>>  left: 30px;
+>>
+>>  border: 3px solid #73AD21;
+>
+> }
 
 

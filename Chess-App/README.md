@@ -161,6 +161,6 @@ HTML elements are positioned static by default.
 >out
 ## Some Video
 
-![Some_Video(/home/aden/Desktop/Attachment/Chess-App/images/image4.jpg)]
+![Image(/Chess-App/images/image3.jpg)]
 
 

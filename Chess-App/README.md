@@ -153,17 +153,12 @@ If ```position: static;``` - the top property has no effect.
 The position property specifies the type of positioning method used for an element (static, relative, fixed, absolute or stick
 ```Position: static;```
 HTML elements are positioned static by default.
->Nested
->>Hey
+An element with position: static; is not positioned in any special way; it is always positioned according to the normal flow of the page:
+
+> div.static {
+>>  position: static;
+>>  border: 3px solid #73AD21;
 >>
->>nested
->
->out
-## Some Video
-
-![Video](/Chess-App/images/image4.jpg)
-
-## Some Links
-![Images](https://github.com/Sephens/Attachment/tree/master/Chess-App/images)
+>}
 
 

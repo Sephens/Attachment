@@ -5,7 +5,7 @@
 
 > If you like this content, you can ping me or follow me on Twitter :+1:
 
-[![Tweet for help](https://img.shields.io/twitter/follow/mbeaudru?label=Tweet%20%40mbeaudru&style=social)](https://twitter.com/sephenz)
+[![Tweet for help](https://img.shields.io/twitter/follow/sephenz?label=Tweet%20%40sephensz&style=social)](https://twitter.com/sephenz)
 
 ## Introduction
 

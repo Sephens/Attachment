@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:rgb(99, 87, 201);
+    height:75px;
+    color:white;
+
+
+}
+
+.logo {
+    font-size:30px;
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+}
+
+.home,
+.skills,
+.contacts,
+.about,
+.signup{
+    text-decoration: none;
+    color:white;
+    font-size:20px;
+    padding: 10px 20px;
+    margin: 0px 10px;
+
+}
+.signup {
+    border: 1px solid yellow;
+    border-radius: 15px;
+}
+.mobile-menu-icon{
+    display:none;
+}

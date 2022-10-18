@@ -5,7 +5,7 @@ const Navbar = () => {
     const [isMobile,setIsMobile] = useState(false);
   return (
     <nav className="navbar">
-    <h3 className="logo">Logo</h3>
+    <h3 className="logo">MERN</h3>
     <ul className={isMobile? "nav-links-mobile":"nav-links"
     
     }
@@ -13,23 +13,23 @@ const Navbar = () => {
     >
 
     <Link to="/" className="home">
-        <li>Home</li>
+        <li><i className="fas fa-home"></i>Home</li>
     </Link>
 
     <Link to="/about" className="about">
-        <li>About</li>
+        <li><i className="fas fa-about"></i>About</li>
     </Link>
 
     <Link to="/skills" className="skills">
-        <li>Skills</li>
+        <li><i className="fas fa-book"></i>Skills</li>
     </Link>
 
     <Link to="/contacts" className="contacts">
-        <li>Contacts</li>
+        <li><i className="fas fa-phone"></i>Contacts</li>
     </Link>
 
     <Link to="/signup" className="signup">
-        <li>Sign Up</li>
+        <li><i className="fas fa-pen"></i>Sign Up</li>
     </Link>
 
     </ul>

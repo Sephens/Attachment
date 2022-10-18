@@ -1,11 +1,34 @@
+require('dotenv').config()
 const express = require('express')
 const app = express()
 const path = require('path')
-const PORT = process.env.PORT || 4000 // which port the server runs on
+//import the logger we created
+const { logger } = require('./middleware/logger')
 
+//import the errorHandler
+const errorHandler = require('./middleware/errorHandler')
+
+//import the cookie parser
+const cookieParser = require('cookie-parser')
+
+//import cors(cross origin resource sharing)
+const cors = require('cors')
+
+const corsOptions = require('./config/corsOptions')
+const PORT = process.env.PORT || 4001 // which port the server runs on
+
+console.log(process.env.NODE_ENV)
+
+//lets user our logger file in our app
+app.use(logger)
+
+//use cors
+app.use(cors(corsOptions))
 //an express middleware to process json
 app.use(express.json())
 
+//use the cookie parser
+app.use(cookieParser)
 
  //express.static is a middleware that tells the server where to grab static files.
  //path.join is used to get the directory name
@@ -26,4 +49,7 @@ app.all('*',(req,res)=>{
         res.type('txt').send('404 Not Found')
     }
 }) 
+
+//use the errorHandler
+app.use(errorHandler)
 app.listen(PORT, ()=> console.log(`Server running on PORT ${PORT}`))
